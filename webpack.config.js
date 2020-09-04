@@ -9,20 +9,20 @@ const isProduction = !isDevelopment;
 const distPath = path.join(__dirname, '/build');
 
 const config = {
-  entry: ['@babel/polyfill', './src/app.jsx'],
+  entry: ['@babel/polyfill', './src/app.js'],
   output: {
     filename: 'bundle.js',
     path: distPath
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".jsx", ".js"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
   module: {
     rules: [{
       test: /\.html$/,
       use: 'html-loader'
     }, {
-      test: /\.tsx?$/,
+      test: /\.js?$/,
       exclude: /node_modules/,
       use: [{
         loader: 'babel-loader'
