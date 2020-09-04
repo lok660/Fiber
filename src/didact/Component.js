@@ -1,5 +1,6 @@
 import { updateInstance } from './render'
 
+//  组件构造方法
 export class Component {
 
   constructor(props) {

@@ -9,6 +9,7 @@ const isProduction = !isDevelopment;
 const distPath = path.join(__dirname, '/build');
 
 const config = {
+  devtool: isDevelopment ? 'cheap-module-eval-source-map' : 'eval-cheap-source-map',
   entry: ['@babel/polyfill', './src/app.js'],
   output: {
     filename: 'bundle.js',
