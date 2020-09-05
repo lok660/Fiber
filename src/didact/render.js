@@ -8,6 +8,12 @@ export function render (element, container) {
   rootInstance = nextInstance;
 }
 
+/**
+ * 比对真实DOM与虚拟DOM
+ * @param {*} parentDom 真实DOM
+ * @param {*} instance 虚拟DOM树
+ * @param {*} element 
+ */
 function reconcile (parentDom, instance, element) {
   if (instance == null) {
     // Create instance
