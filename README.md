@@ -120,3 +120,5 @@ Fragment
 [update过程]: https://github.com/yoution/fiber-source/blob/master/update.md
 [render过程]: https://github.com/yoution/fiber-source/blob/master/render.md
 
+[didact文档]: https://github.com/chinanf-boy/didact-explain/blob/master/5.Fibre.readme.md
+
